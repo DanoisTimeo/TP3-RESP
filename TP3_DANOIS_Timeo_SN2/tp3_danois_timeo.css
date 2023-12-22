@@ -1,0 +1,149 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hebergements {
+  display: flex;
+  margin-top: 5%;
+}
+.hebergements .hebergements_marseille {
+  width: 60%;
+  margin-right: 10%;
+  background-color: rgb(180, 175, 175);
+  border-radius: 10px;
+  padding: 15px;
+}
+.hebergements .hebergements_marseille .liste_hebergements {
+  display: flex;
+  justify-content: space-between;
+}
+.hebergements .hebergements_marseille a {
+  text-decoration: none;
+  color: black;
+}
+.hebergements .hebergements_populaires {
+  width: 30%;
+  background-color: rgb(180, 175, 175);
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 15px;
+}
+.hebergements .hebergements_populaires .div {
+  display: flex;
+}
+.hebergements .hebergements_populaires .card {
+  width: 400px;
+  height: 150px;
+  display: flex;
+}
+.hebergements .hebergements_populaires .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 5%;
+}
+.hebergements .hebergements_populaires .card .div {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 1493px) {
+  body {
+    width: 99%;
+  }
+}
+@media screen and (max-width: 1459px) {
+  body {
+    width: 98%;
+  }
+  .hebergements {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+  }
+  .hebergements .hebergements_marseille {
+    margin-right: 0%;
+    margin-bottom: 25px;
+  }
+  .hebergements .hebergements_populaires {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .hebergements .hebergements_populaires .card {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .hebergements {
+    width: 100%;
+  }
+  .hebergements .hebergements_marseille {
+    margin-right: 0%;
+    margin-bottom: 25px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .hebergements .hebergements_populaires {
+    background-color: #f5f5f5;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .hebergements {
+    width: 90%;
+    margin: auto;
+  }
+  .hebergements .hebergements_marseille .liste_hebergements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .hebergements .hebergements_marseille .card {
+    width: 95%;
+    display: flex;
+  }
+  .hebergements .hebergements_marseille .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 5%;
+  }
+  .hebergements .hebergements_marseille .card .div {
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=tp3_danois_timeo.css.map */
